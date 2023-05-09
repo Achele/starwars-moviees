@@ -1,7 +1,9 @@
+import "../styles/Header.css";
+
 const Header = () => {
   return (
     <>
-      <div className="logo">
+      <div className="logoMain">
         <svg viewBox="0 0 1347.6 227.4" className="logo">
           <g id="Logo">
             <path
