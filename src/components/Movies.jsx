@@ -1,23 +1,16 @@
-// import { useEffect, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import MovieCard from "./MovieCard";
 import "../styles/Movies.css";
-// import Header from "./Header";
 
-export default function MoviesTrail() {
+export default function Movies() {
   const url = "https://swapi.dev/api/films";
   const { loading, data, error } = useFetch(url);
 
   const results = data.results;
   console.log(results);
 
-  //   const movies = data.map((result, index) => {
-  //     return <MovieCard key={result.index} {...result} />;
-  //   });
-
   return (
     <section className="movieContainer">
-      {/* <Header /> */}
       {loading && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
